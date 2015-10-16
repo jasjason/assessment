@@ -29,38 +29,43 @@ namespace assessment
             float discount;
             float total;
 
-            if (textBox2.Text.Trim() == "")
+            if (txtPdtCost1.Text.Trim() == "")
             {
                 price1 = 0;
             }
             else
             {
-                price1 = float.Parse(this.textBox2.Text);
+                price1 = float.Parse(this.txtPdtCost1.Text);
             }
 
-            if (textBox4.Text.Trim() == "")
+            if (txtPdtCost2.Text.Trim() == "")
             {
                 price2 = 0;
             }
             else
             {
-                price2 = float.Parse(this.textBox4.Text);
+                price2 = float.Parse(this.txtPdtCost2.Text);
             }
 
-
-            if (textBox5.Text.Trim() == "")
+            
+            if (txtDiscountAmt.Text.Trim() == "")
             {
                 discount = 0;
             }
             else
             {
-                discount = float.Parse(this.textBox5.Text);
+                discount = float.Parse(this.txtDiscountAmt.Text) / 100;
             }
 
+            if (String.Equals(txtPdtCode1.Text,txtPdtCode2.Text))
+            {
+                price2 = (float.Parse(this.txtPdtCost2.Text)) - ((float.Parse(this.txtPdtCost2.Text)) * discount);
+            }
 
-            total = price1 + price2 - discount;
+            total = price1 + price2;
+            
 
-            textBox6.Text = total.ToString();
+            txtTotal.Text = total.ToString();
         }
     }
 }

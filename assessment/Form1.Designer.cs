@@ -35,12 +35,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPdtCode1 = new System.Windows.Forms.TextBox();
+            this.txtPdtCost1 = new System.Windows.Forms.TextBox();
+            this.txtPdtCode2 = new System.Windows.Forms.TextBox();
+            this.txtPdtCost2 = new System.Windows.Forms.TextBox();
+            this.txtDiscountAmt = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -92,7 +92,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 163);
+            this.label6.Location = new System.Drawing.Point(9, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 5;
@@ -101,58 +101,58 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 138);
+            this.label7.Location = new System.Drawing.Point(10, 166);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Less Discount:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox1
+            // txtPdtCode1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtPdtCode1.Location = new System.Drawing.Point(119, 28);
+            this.txtPdtCode1.Name = "txtPdtCode1";
+            this.txtPdtCode1.Size = new System.Drawing.Size(100, 20);
+            this.txtPdtCode1.TabIndex = 7;
             // 
-            // textBox2
+            // txtPdtCost1
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtPdtCost1.Location = new System.Drawing.Point(119, 51);
+            this.txtPdtCost1.Name = "txtPdtCost1";
+            this.txtPdtCost1.Size = new System.Drawing.Size(100, 20);
+            this.txtPdtCost1.TabIndex = 8;
             // 
-            // textBox3
+            // txtPdtCode2
             // 
-            this.textBox3.Location = new System.Drawing.Point(119, 77);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtPdtCode2.Location = new System.Drawing.Point(119, 77);
+            this.txtPdtCode2.Name = "txtPdtCode2";
+            this.txtPdtCode2.Size = new System.Drawing.Size(100, 20);
+            this.txtPdtCode2.TabIndex = 9;
             // 
-            // textBox4
+            // txtPdtCost2
             // 
-            this.textBox4.Location = new System.Drawing.Point(119, 103);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtPdtCost2.Location = new System.Drawing.Point(119, 103);
+            this.txtPdtCost2.Name = "txtPdtCost2";
+            this.txtPdtCost2.Size = new System.Drawing.Size(100, 20);
+            this.txtPdtCost2.TabIndex = 10;
             // 
-            // textBox5
+            // txtDiscountAmt
             // 
-            this.textBox5.Location = new System.Drawing.Point(119, 131);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtDiscountAmt.Location = new System.Drawing.Point(119, 159);
+            this.txtDiscountAmt.Name = "txtDiscountAmt";
+            this.txtDiscountAmt.Size = new System.Drawing.Size(100, 20);
+            this.txtDiscountAmt.TabIndex = 11;
             // 
-            // textBox6
+            // txtTotal
             // 
-            this.textBox6.Location = new System.Drawing.Point(119, 156);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtTotal.Location = new System.Drawing.Point(119, 184);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtTotal.TabIndex = 12;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(43, 197);
+            this.button1.Location = new System.Drawing.Point(43, 225);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 13;
@@ -166,12 +166,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtDiscountAmt);
+            this.Controls.Add(this.txtPdtCost2);
+            this.Controls.Add(this.txtPdtCode2);
+            this.Controls.Add(this.txtPdtCost1);
+            this.Controls.Add(this.txtPdtCode1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -195,12 +195,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPdtCode1;
+        private System.Windows.Forms.TextBox txtPdtCost1;
+        private System.Windows.Forms.TextBox txtPdtCode2;
+        private System.Windows.Forms.TextBox txtPdtCost2;
+        private System.Windows.Forms.TextBox txtDiscountAmt;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button button1;
     }
 }

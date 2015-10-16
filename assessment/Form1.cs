@@ -1,4 +1,5 @@
-﻿using System;
+﻿using assessment;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,7 +63,9 @@ namespace assessment
                 price2 = (float.Parse(this.txtPdtCost2.Text)) - ((float.Parse(this.txtPdtCost2.Text)) * discount);
             }
 
-            total = price1 + price2;
+            Computation computeTotal = new Computation();
+
+            total = computeTotal.GetTotalPrice(price1, price2);
             
 
             txtTotal.Text = total.ToString();
